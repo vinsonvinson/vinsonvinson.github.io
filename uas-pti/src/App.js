@@ -1,28 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  const navigate = useNavigate();
+  const [name, setName] = useState('');
+
+  const handleClick = () => {
+    if (name.trim() !== '') {
+      navigate('/story');
+    }
+  };
+
   return (
     <div className="containerwrap">
       <div className="header">
-        <img className="logoIndo"
-             src='https://api2.kemenparekraf.go.id/storage/app/uploads/public/621/437/638/621437638c977337188787.png'
-             alt='WonderfulIndonesia'></img>
-        <img className="logoUMN"
-             src='https://seeklogo.com/images/U/universitas-multimedia-nusantara-umn-logo-48A807B801-seeklogo.com.png'
-             alt='UMN'></img>
-        <img className='logoF4'
-             src='https://seeklogo.com/images/F/Fantastic_Four-logo-95A3DB03CB-seeklogo.com.png'
-             alt='f4'></img>
-             {/*Logo Kelompok jika diklik akan ke menuju About Us (jika ada)*/}
+        <img
+          className="logoIndo"
+          src="https://api2.kemenparekraf.go.id/storage/app/uploads/public/621/437/638/621437638c977337188787.png"
+          alt="WonderfulIndonesia"
+        />
+        <img
+          className="logoUMN"
+          src="https://seeklogo.com/images/U/universitas-multimedia-nusantara-umn-logo-48A807B801-seeklogo.com.png"
+          alt="UMN"
+        />
+        <img
+          className="logoF4"
+          src="https://seeklogo.com/images/F/Fantastic_Four-logo-95A3DB03CB-seeklogo.com.png"
+          alt="f4"
+        />
+        {/*Logo Kelompok jika diklik akan ke menuju About Us (jika ada)*/}
       </div>
       <br />
       <div className="inputName">
-        <input type='name' placeholder='INPUT NAME'></input>
+        <input
+          type="text"
+          placeholder="INPUT NAME"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
       </div>
       <br />
-      <div className='start'>
-        <button className='startBtn'>START</button>
+      <div className="start">
+        <button className="startBtn" onClick={handleClick}>
+          START
+        </button>
       </div>
     </div>
   );
