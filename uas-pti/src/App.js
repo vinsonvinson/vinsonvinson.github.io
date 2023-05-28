@@ -12,6 +12,10 @@ function App() {
     }
   };
 
+  const handleClick2 = () => {
+    navigate('/aboutus');
+  };
+
   return (
     <div className="containerwrap">
       <div className="header">
@@ -29,6 +33,7 @@ function App() {
           className="logoF4"
           src="https://seeklogo.com/images/F/Fantastic_Four-logo-95A3DB03CB-seeklogo.com.png"
           alt="f4"
+          onClick={handleClick2}
         />
         {/*Logo Kelompok jika diklik akan ke menuju About Us (jika ada)*/}
       </div>

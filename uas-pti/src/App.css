@@ -41,11 +41,12 @@ input {
     font-size: 48px;
     text-align: center;
     outline: 4px solid black;
+    transition: 0.3s;
 }
 
 input:focus {
-    outline: none;
-    box-shadow: 0 0 10px 4px rgba(0, 0, 255, 0.5);
+    transition: 0.3s;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 255, 0.5);
 }
 
 .start {
@@ -70,4 +71,37 @@ input:focus {
     border-radius: 50px;
     border-color: lightgreen !important;
     transition: all 0.3s ease 0s;
+}
+
+@media (min-height: 900px) {
+    .logoIndo {
+        width: 320px;
+    }
+
+    .logoUMN {
+        width: 180px;
+    }
+
+    .logoF4 {
+        width: 210px;
+    }
+
+    .inputName {
+        margin-top: 200px;
+    }
+
+    input {
+        width: 450px;
+        height: 120px;
+    }
+
+    .start {
+        margin-top: 80px;
+    }
+
+    .startBtn {
+        width: 180px;
+        height: 80px;
+        font-size: 40px;
+    }
 }
