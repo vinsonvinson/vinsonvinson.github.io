@@ -119,6 +119,27 @@
     transition-delay: 2.5s;
 }
 
+.homeBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+  
+.homeBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+
 @media (min-height: 900px) {
     .aboutus-container {
         padding: 100px;
