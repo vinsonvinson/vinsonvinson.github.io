@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './App.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./App.css";
 
 function App() {
   const navigate = useNavigate();
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const handleClick = () => {
-    if (name.trim() !== '') {
-      navigate('/story');
+    if (name.trim() !== "") {
+      navigate("/story/" + name);
     }
   };
 
   const handleClick2 = () => {
-    navigate('/aboutus');
+    navigate("/aboutus");
   };
 
   return (

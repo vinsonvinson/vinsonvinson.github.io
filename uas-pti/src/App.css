@@ -1,107 +1,107 @@
 .containerwrap {
-    padding: 8px 20px;
+  padding: 8px 20px;
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-  
+
 .logoIndo {
-    justify-self: start;
-    width: 240px;
+  justify-self: start;
+  width: 240px;
 }
-  
+
 .logoUMN {
-    justify-self: center;
-    width: 90px;
+  justify-self: center;
+  width: 90px;
 }
-  
+
 .logoF4 {
-    display: inline-block;
-    justify-self: end;
-    border-radius: 100%;
-    width: 100px;
-    transition: 0.3s;
+  display: inline-block;
+  justify-self: end;
+  border-radius: 100%;
+  width: 100px;
+  transition: 0.3s;
 }
 
 .logoF4:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 10px 8px lightblue;
+  transform: scale(1.15);
+  box-shadow: 0 0 10px 8px lightblue;
 }
 
 .inputName {
-    margin-top: 100px;
-    text-align: center;
+  margin-top: 100px;
+  text-align: center;
 }
 
 input {
-    width: 400px;
-    height: 100px;
-    font-size: 48px;
-    text-align: center;
-    outline: 4px solid black;
-    transition: 0.3s;
+  width: 400px;
+  height: 100px;
+  font-size: 48px;
+  text-align: center;
+  outline: 4px solid black;
+  transition: 0.3s;
 }
 
 input:focus {
-    transition: 0.3s;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 255, 0.5);
+  transition: 0.3s;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 255, 0.5);
 }
 
 .start {
-    margin-top: 40px;
-    text-align: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .startBtn {
-    width: 100px;
-    height: 60px;
-    padding: 6px;
-    font-size: 20px;
-    border-radius: 8px;
-    color: black;
-    border: 4px solid black !important;
-    display: inline-block;
-    transition: all 0.3s ease 0s;
+  width: 100px;
+  height: 60px;
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: black;
+  border: 4px solid black !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
 }
 
 .startBtn:hover {
-    color: lightgreen !important;
-    border-radius: 50px;
-    border-color: lightgreen !important;
-    transition: all 0.3s ease 0s;
+  color: rgb(214, 153, 0) !important;
+  border-radius: 50px;
+  border-color: rgb(214, 153, 0) !important;
+  transition: all 0.3s ease 0s;
 }
 
 @media (min-height: 900px) {
-    .logoIndo {
-        width: 320px;
-    }
+  .logoIndo {
+    width: 320px;
+  }
 
-    .logoUMN {
-        width: 180px;
-    }
+  .logoUMN {
+    width: 180px;
+  }
 
-    .logoF4 {
-        width: 210px;
-    }
+  .logoF4 {
+    width: 210px;
+  }
 
-    .inputName {
-        margin-top: 200px;
-    }
+  .inputName {
+    margin-top: 200px;
+  }
 
-    input {
-        width: 450px;
-        height: 120px;
-    }
+  input {
+    width: 450px;
+    height: 120px;
+  }
 
-    .start {
-        margin-top: 80px;
-    }
+  .start {
+    margin-top: 80px;
+  }
 
-    .startBtn {
-        width: 180px;
-        height: 80px;
-        font-size: 40px;
-    }
+  .startBtn {
+    width: 180px;
+    height: 80px;
+    font-size: 40px;
+  }
 }

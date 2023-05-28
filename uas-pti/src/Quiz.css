@@ -1,0 +1,59 @@
+.question-container {
+  color: rgba(253, 240, 237, 1);
+  border: 5px solid rgba(253, 240, 237, 1);
+  border-radius: 10px;
+  background: rgba(9, 6, 0, 1);
+}
+
+.ansBtn {
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 8px;
+  color: black;
+  border: 4px solid black !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.ansBtn:hover {
+  color: rgb(214, 153, 0) !important;
+  border-radius: 50px;
+  border-color: rgb(214, 153, 0) !important;
+  transition: all 0.3s ease 0s;
+}
+
+.statusIcon {
+  margin-top: 6px;
+  font-size: 30px;
+  width: 30px;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(189, 186, 186);
+  outline: black solid 4px;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+  outline: gray solid 2px;
+}
+
+.healthbar {
+  height: 20px;
+  width: 200px;
+  margin: 16px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.enemybar {
+  height: 20px;
+  width: 200px;
+  margin: 16px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
