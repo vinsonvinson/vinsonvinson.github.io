@@ -28,6 +28,9 @@
     position: relative;
     transform-style: preserve-3d;
     transition: 1s;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32b2d354-70d4-4b69-bba7-81de32431c60/d4on9zw-484ac966-e3fa-49e4-b227-a6b99d07c9af.png/v1/fill/w_755,h_1058/persona_tarot_card_hd___back_by_the_stein_d4on9zw-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI2MSIsInBhdGgiOiJcL2ZcLzMyYjJkMzU0LTcwZDQtNGI2OS1iYmE3LTgxZGUzMjQzMWM2MFwvZDRvbjl6dy00ODRhYzk2Ni1lM2ZhLTQ5ZTQtYjIyNy1hNmI5OWQwN2M5YWYucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZgEz-qhzigrUW4WX3yIzjblsJinZqYnG5rhjfjgwKGs");
+    background-size: cover;
+    background-position: center;
 }
 
 .card-img {
@@ -44,11 +47,12 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
-    width: 85%;
-    height: 87%;
+    width: 95%;
+    height: 95%;
     border-radius: 20px;
     overflow: hidden;
     border: 5px solid #fff;
+    
 }
 
 .card:hover {
@@ -57,7 +61,7 @@
 
 .card-body .bg {
     position: absolute;
-    background: gray;
+    background: lightgray;
     border-radius: 100px;
     width: 0%;
     transition: .5s;
@@ -110,6 +114,7 @@
 
 .name {
     font-size: 42px;
+    font-weight: bold;
     margin-bottom: 20px;
     color: #292929;
 }
@@ -127,7 +132,7 @@
     text-decoration: none;
     background-color: #4CAF50;
     color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 8px;
     border: none;
     transition: background-color 0.3s ease;
     cursor: pointer;
@@ -138,6 +143,11 @@
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
   
 
 @media (min-height: 900px) {
@@ -146,12 +156,17 @@
     }
 
     .homeBtn {
-        width: 240px;
-        height: 60px;
+        width: 260px;
+        height: 80px;
         font-size: 24px;
+        border-radius: 8px;
     }
 
     .card-container {
         margin-bottom: 60px;
+    }
+
+    .content {
+        font-size: 24px;
     }
 }

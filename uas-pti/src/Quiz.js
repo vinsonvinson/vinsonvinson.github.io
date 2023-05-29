@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./Quiz.css";
 
 function Quiz() {
@@ -14,18 +13,16 @@ function Quiz() {
   const [level, setLevel] = useState(1);
 
   useEffect(() => {
-    fetch(
-      "https://opentdb.com/api.php?amount=20&difficulty=easy&category=" + cate
-    )
+    let url = "https://opentdb.com/api.php?amount=20&difficulty=easy";
+    if (cate && cate !== "any") {
+      url += "&category=" + cate;
+    }
+    fetch(url)
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.error(error));
-  }, []);
-
-  function nextQuestion() {
-    if (i < 9) setIndex(i + 1);
-  }
-
+  }, [cate]);
+  
   function checkAnswer(ans) {
     if (ans === data.results[i].correct_answer) {
       if (i < 20) setIndex(i + 1);
@@ -38,18 +35,20 @@ function Quiz() {
           setIndex(0);
           setEnemy(100);
           if (level >= 2) {
-            fetch(
-              "https://opentdb.com/api.php?amount=20&difficulty=hard&category=" +
-                cate
-            )
+            let url = "https://opentdb.com/api.php?amount=20&difficulty=hard";
+            if (cate && cate !== "any") {
+              url += "&category=" + cate;
+            }
+            fetch(url)
               .then((response) => response.json())
               .then((json) => setData(json))
               .catch((error) => console.error(error));
           } else {
-            fetch(
-              "https://opentdb.com/api.php?amount=20&difficulty=medium&category=" +
-                cate
-            )
+            let url = "https://opentdb.com/api.php?amount=20&difficulty=medium";
+            if (cate && cate !== "any") {
+              url += "&category=" + cate;
+            }
+            fetch(url)
               .then((response) => response.json())
               .then((json) => setData(json))
               .catch((error) => console.error(error));
@@ -73,9 +72,10 @@ function Quiz() {
       var answers = data.results[i].incorrect_answers;
       answers.push(data.results[i].correct_answer);
       answers = shuffle(answers);
-      return answers.map((item) => (
+      return answers.map((item, index) => (
         <button
-          className="contBtn mx-2"
+          key={index}
+          className="ansBtn mx-2"
           dangerouslySetInnerHTML={{
             __html: item,
           }}
@@ -151,7 +151,7 @@ function Quiz() {
           __html: data ? data.results[i].question : "Loading...",
         }}
       ></div>
-      <div className="text-center">
+      <div className="buttoncontainer text-center">
         {renderChoice()}
         {/* <p>{JSON.stringify(data, null, 2)}</p> */}
       </div>

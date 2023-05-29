@@ -25,9 +25,9 @@ function App() {
           src="https://seeklogo.com/images/U/universitas-multimedia-nusantara-umn-logo-48A807B801-seeklogo.com.png"
           alt="UMN"
         />
-        <div className="text-center pt-5">
-          <h1>Fantastic Nusantara</h1>
-          <h3>Quiz Game</h3>
+        <div className="title text-center">
+          <h1 className="title1">Fantastic Nusantara</h1>
+          <h3 className="title2">Quiz Game</h3>
         </div>
         <img
           className="logoF4"
@@ -35,7 +35,7 @@ function App() {
           alt="f4"
           onClick={handleClick2}
         />
-        {/*Logo Kelompok jika diklik akan ke menuju About Us (jika ada)*/}
+        {/*Logo Kelompok jika diklik akan ke menuju About Us*/}
       </div>
       <br />
       <div className="inputName">
@@ -60,7 +60,6 @@ function App() {
             <option value="16">Board Games</option>
             <option value="17">Science & Nature</option>
             <option value="18">Computers</option>
-            <option value="19">Mathematics</option>
             <option value="20">Mythology</option>
             <option value="21">Sports</option>
             <option value="22">Geography</option>

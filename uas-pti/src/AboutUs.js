@@ -18,7 +18,7 @@ function AboutUs() {
             <div className="card-container col-lg-3 col-sm-6">
                 <div className="card">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg"
+                        src="../You Ya Lim.jpg"
                         alt=""
                         className="card-img"
                     />
@@ -28,7 +28,8 @@ function AboutUs() {
                         <div className="bg"></div>
                         <div className="content">
                             <h2 className="name">You Ya Lim</h2>
-                            <p>00000070306</p>
+                            <p className="nim">00000070306</p>
+                            <a className="ig" href="https://www.instagram.com/_kepalasuku_/">@_kepalasuku_</a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +37,7 @@ function AboutUs() {
             <div className="card-container col-lg-3 col-sm-6">
                 <div className="card">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg"
+                        src="../Mitawati.jpg"
                         alt=""
                         className="card-img"
                     />
@@ -46,7 +47,8 @@ function AboutUs() {
                         <div className="bg"></div>
                         <div className="content">
                             <h2 className="name">Mitawati</h2>
-                            <p>00000070345</p>
+                            <p className="nim">00000070345</p>
+                            <a className="ig" href="https://www.instagram.com/tamita.wp06/">@tamita.wp06</a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +56,7 @@ function AboutUs() {
             <div className="card-container col-lg-3 col-sm-6">
                 <div className="card">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg"
+                        src="../Rio Ferdinan.jpg"
                         alt=""
                         className="card-img"
                     />
@@ -64,7 +66,8 @@ function AboutUs() {
                         <div className="bg"></div>
                         <div className="content">
                             <h2 className="name">Rio Ferdinan</h2>
-                            <p>00000070666</p>
+                            <p className="nim">00000070666</p>
+                            <a className="ig" href="https://www.instagram.com/riohu__/">@riohu__</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +75,7 @@ function AboutUs() {
             <div className="card-container col-lg-3 col-sm-6">
                 <div className="card">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg"
+                        src="../Vinson.jpg"
                         alt=""
                         className="card-img"
                     />
@@ -82,7 +85,8 @@ function AboutUs() {
                         <div className="bg"></div>
                         <div className="content">
                             <h2 className="name">Vinson</h2>
-                            <p>00000070870</p>
+                            <p className="nim">00000070870</p>
+                            <a className="ig" href="https://www.instagram.com/vinson.ll/">@vinson.ll</a>
                         </div>
                     </div>
                 </div>

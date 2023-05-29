@@ -1,10 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+
 .containerwrap {
-  padding: 8px 20px;
+  padding: 20px;
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title {
+  margin-top: 40px;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: gold;
+  padding-top: 16px!important;
+}
+
+.title1 {
+  font-size: 46px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 12px;
+  color: rgb(118, 38, 34);
+}
+
+.title2 {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 8px;
+  color: rgb(118, 38, 34);
 }
 
 .logoIndo {
@@ -18,14 +45,15 @@
 }
 
 .logoF4 {
+  border-radius: 100%;
   justify-self: end;
-  width: 240px;
+  width: 180px;
   transition: 0.3s;
 }
 
 .logoF4:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 10px 8px lightblue;
+  box-shadow: 0 0 10px 12px gold;
 }
 
 .inputName {
@@ -39,12 +67,13 @@ input {
   font-size: 48px;
   text-align: center;
   outline: 4px solid black;
+  background: lightgoldenrodyellow;
   transition: 0.3s;
 }
 
 input:focus {
   transition: 0.3s;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 255, 0.5);
+  box-shadow: 0 0 10px 10px gold;
 }
 
 .start {
@@ -59,6 +88,7 @@ input:focus {
   font-size: 20px;
   border-radius: 8px;
   color: black;
+  background: lightgoldenrodyellow;
   border: 4px solid black !important;
   display: inline-block;
   transition: all 0.3s ease 0s;
@@ -71,37 +101,24 @@ input:focus {
   transition: all 0.3s ease 0s;
 }
 
-@media (min-height: 900px) {
-  .logoIndo {
-    width: 320px;
-  }
+.backBtn {
+  width: 100px;
+  height: 60px;
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: black;
+  background: lightgoldenrodyellow;
+  border: 4px solid black !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
 
-  .logoUMN {
-    width: 180px;
-  }
-
-  .logoF4 {
-    width: 210px;
-  }
-
-  .inputName {
-    margin-top: 200px;
-  }
-
-  input {
-    width: 450px;
-    height: 120px;
-  }
-
-  .start {
-    margin-top: 80px;
-  }
-
-  .startBtn {
-    width: 180px;
-    height: 80px;
-    font-size: 40px;
-  }
+.backBtn:hover {
+  color: rgb(214, 153, 0) !important;
+  border-radius: 50px;
+  border-color: rgb(214, 153, 0) !important;
+  transition: all 0.3s ease 0s;
 }
 
 .select {
@@ -125,6 +142,7 @@ input:focus {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background: lightgoldenrodyellow;
 }
 .select select::-ms-expand {
   display: none;
@@ -153,4 +171,78 @@ input:focus {
 }
 .select select:disabled ~ .select_arrow {
   border-top-color: #cccccc;
+}
+
+.lostmsg {
+  display: inline-block;
+  background-color: gold;
+  color: rgb(118, 38, 34);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 12px;
+}
+
+@media (min-height: 900px) {
+  .logoIndo {
+    width: 320px;
+  }
+
+  .logoUMN {
+    width: 130px;
+  }
+
+  .logoF4 {
+    width: 210px;
+  }
+
+  .inputName {
+    margin-top: 200px;
+  }
+
+  input {
+    width: 450px;
+    height: 120px;
+  }
+
+  .start {
+    margin-top: 80px;
+  }
+
+  .startBtn {
+    width: 180px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .backBtn {
+    width: 180px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .title {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .title1{
+    font-size: 64px;
+  }
+
+  .title2{
+    font-size: 42px;
+  }
+
+  .select {
+    width: 50%;
+    font-size: 24px;
+  }
+
+  .containerwrap {
+    padding: 20px 10px;
+  }
+
+  .select select {
+    font-size: 16px;
+  }
 }

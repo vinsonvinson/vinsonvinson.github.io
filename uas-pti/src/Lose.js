@@ -20,9 +20,9 @@ function App() {
           src="https://seeklogo.com/images/U/universitas-multimedia-nusantara-umn-logo-48A807B801-seeklogo.com.png"
           alt="UMN"
         />
-        <div className="text-center pt-5">
-          <h1>Fantastic Nusantara</h1>
-          <h3>Quiz Game</h3>
+        <div className="title text-center pt-5">
+          <h1 className="title1">Fantastic Nusantara</h1>
+          <h3 className="title2">Quiz Game</h3>
         </div>
         <img
           className="logoF4"
@@ -33,12 +33,29 @@ function App() {
         {/*Logo Kelompok jika diklik akan ke menuju About Us (jika ada)*/}
       </div>
       <div className="text-center mt-5 pt-5">
-        <h1>You Lost</h1>
+        <h1 className="lostmsg">You Lost</h1>
+        <div className="defeat">
+          <img
+            src="../../character/bromocakra.gif"
+            className="monster mt-5"
+            alt=""
+          />
+          <img
+            src="../../character/brajasambu.gif"
+            className="monster mt-5"
+            alt=""
+          />
+          <img
+            src="../../character/malaupata.gif"
+            className="monster mt-5"
+            alt=""
+          />
+        </div>
       </div>
       <br />
       <div className="start">
         <button
-          className="startBtn"
+          className="backBtn"
           style={{ width: "200px" }}
           onClick={handleClick}
         >
