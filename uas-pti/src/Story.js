@@ -13,7 +13,7 @@ function Story(props) {
   const [showButton, setShowButton] = useState(false);
 
   const handleClick = () => {
-    navigate("/quiz/" + cate);
+    navigate("/quiz/" + name + "/" + cate);
   };
 
   const handleComplete = () => {

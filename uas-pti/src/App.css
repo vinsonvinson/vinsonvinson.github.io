@@ -13,15 +13,13 @@
 }
 
 .logoUMN {
-  justify-self: center;
-  width: 90px;
+  justify-self: start;
+  width: 80px;
 }
 
 .logoF4 {
-  display: inline-block;
   justify-self: end;
-  border-radius: 100%;
-  width: 100px;
+  width: 240px;
   transition: 0.3s;
 }
 
@@ -111,7 +109,7 @@ input:focus {
   display: inline-block;
   margin-bottom: 15px;
   margin-top: 50px;
-  width: 50%;
+  width: 30%;
 }
 .select select {
   font-family: "Arial";

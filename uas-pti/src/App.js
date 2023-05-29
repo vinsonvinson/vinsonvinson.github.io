@@ -21,18 +21,17 @@ function App() {
     <div className="containerwrap">
       <div className="header">
         <img
-          className="logoIndo"
-          src="https://api2.kemenparekraf.go.id/storage/app/uploads/public/621/437/638/621437638c977337188787.png"
-          alt="WonderfulIndonesia"
-        />
-        <img
           className="logoUMN"
           src="https://seeklogo.com/images/U/universitas-multimedia-nusantara-umn-logo-48A807B801-seeklogo.com.png"
           alt="UMN"
         />
+        <div className="text-center pt-5">
+          <h1>Fantastic Nusantara</h1>
+          <h3>Quiz Game</h3>
+        </div>
         <img
           className="logoF4"
-          src="https://seeklogo.com/images/F/Fantastic_Four-logo-95A3DB03CB-seeklogo.com.png"
+          src="../logo.png"
           alt="f4"
           onClick={handleClick2}
         />
